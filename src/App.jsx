@@ -24,7 +24,7 @@ const App = () => {
             <Navbar />
             <Routes>
 
-              <Route path={"/"} element={<Home />} />
+              <Route path={"/home"} element={<Home />} />
               <Route path={"/confession"} element={<Confessions />} />
             </Routes>
             <footer className='page-bottom'>
