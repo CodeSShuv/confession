@@ -1,0 +1,28 @@
+@import url("./utilitycss.css");
+.site-navigations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem;
+    /* border: 1px solid gainsboro; */
+    /* border-radius: 50%; */
+    overflow: hidden;
+    background-color: #40A2D8;
+    background-image: linear-gradient(to bottom right, #0077b6, #0096c7,#00b4d8);
+}
+.site-navigations a{
+    padding: .5rem;
+    border-radius:1rem;
+    /* background-color: rgba(220, 220, 220, 0.562); */
+    color: white;
+    text-decoration: none;
+    margin-left: 1.4rem;
+}
+.site-navigations a:hover{
+    background-color: rgba(220, 220, 220, 0.562);
+    color: #0B60B0;
+}
+/* .active{
+    background-color: rgba(220, 220, 220, 0.562);
+    color: #0B60B0;
+} */

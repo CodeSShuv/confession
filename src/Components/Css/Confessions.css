@@ -1,0 +1,41 @@
+@import url("./utilitycss.css");
+.confession-card-container{
+   /* display: flex; */
+   justify-content: center;
+   align-items: center;
+
+   /* flex-wrap: wrap; */
+   /* flex-flow: column;  */
+    padding: 1rem;
+    /* height: 100vh; */
+}
+.confession-section h2{
+    overflow: hidden;
+    text-align: center;
+  
+    text-align: center;
+    color:var(--lightBlueLogo);
+    font-size: 3rem;
+    padding: 1.2rem;
+    font-family: cursive;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.row{
+   width: 100%;
+   /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+   
+
+
+}

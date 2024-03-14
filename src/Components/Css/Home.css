@@ -1,0 +1,54 @@
+@import url("./utilitycss.css");
+
+.rules-container{
+
+    overflow: hidden;
+}
+.rules-container h2{
+    font-size: 2rem;
+
+    font-family: cursive    ;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    color: var(--lightBlueLogo);
+    padding: 1rem;
+
+}
+.rules-container p{
+    font-size: 1.2rem;
+  
+    color: var(--lightBlueLogo);
+    padding: .3rem;
+    font-weight: bold;
+}
+.rules-container ol li {
+    display: block;
+    font: 1.2rem;
+    color: var(--lightBlueLogo);
+
+}
+.rules-container p:last-child{
+    font-size: 1rem;
+}
+.lists-container{
+    padding: 1rem;
+}
+.byakta-section{
+    padding: 1.5rem;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #0077b6, #0096c7,#00b4d8,#48cae4,#ade8f4);
+}
+.byakta-section h2{
+    text-align: center;
+    /* color:var(--darkBlueLogo); */
+    color: white;
+    font-size: 3rem;
+    padding: 1.2rem;
+    font-family: cursive;
+    text-decoration: underline;
+    border: 0 , 5px solid white, 0 ,5px solid white ;
+}

@@ -1,0 +1,12 @@
+@import url("./utilitycss.css");
+.card-body  h5{
+    overflow: hidden;
+}
+.custom-card-title{
+    background-color: var(--lightBlueLogo);
+    color: white;
+}
+.card{
+    width: 50rem;
+    
+}

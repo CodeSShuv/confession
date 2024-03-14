@@ -1,0 +1,89 @@
+@import url("./utilitycss.css");
+.compose-center{
+    padding: 2rem;
+    background-color: white;
+
+    /* border: 7px solid var(--lightBlueLogo); */
+    /* background-color: #F0EDCF; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(211, 211, 211, 0.795), 0.1 0px 4px 12px;
+    transition-property: all;
+    transition-duration: 1s;
+      
+}
+.compose-center:focus-within, .compose-center:hover{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  transition-property: all;
+  transition-duration: 1s;
+    
+}
+.input-aliner label{
+    background-color: white;
+}
+.input{
+    padding: .6rem;
+    background-color: white;
+    width: 30rem;
+}
+.input input{
+    width: 29rem;
+    height: 2rem;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: .3rem;
+    outline: 1px solid gainsboro;   
+    border: none;
+}
+.input input:focus{
+    outline: 1px solid var(--lightBlueLogo);
+}
+.input textarea{
+    resize: none;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: .3rem;
+    width: 29rem;
+    height: 14rem;
+    border: none;
+    outline: 1px solid gainsboro;
+
+}
+.input textarea:focus{
+    outline: 1px solid var(--lightBlueLogo);
+}
+#submit-input{
+    border: none;
+    cursor: pointer;
+    padding: .3rem;
+    color:white;
+    /* background-color:rgba(182, 104, 117, 0.849); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:var(--lightBlueLogo);
+    border-radius: 2rem;
+    text-transform:uppercase;
+    /* font-weight: bold; */
+    overflow: hidden;
+    text-align: center;
+}
+.input-aligner .label{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    color: var(--lightBlueLogo);
+}
+@media only screen and (width<1000px){
+    .compose-center{
+        padding: 1rem;
+    }
+    .input{
+        width: 20rem;
+    }
+    .input input{
+        width: 19.6rem;
+    }
+    .input textarea{
+        width: 19.6rem;
+    }
+}
