@@ -1,12 +1,15 @@
 import React,{useContext,useEffect} from 'react'
+//---------------------------------------css imports 
 import "./Css/Compose.css"
+// ---------------------------- context imports
 import InputContext from '../Contexts/InputContext'
 import DataContext from '../Contexts/DataContext'
+import ValidationContext from '../Contexts/ValidationContext'
 
 const Compose = () => {
     const inputStateObject = useContext(InputContext);
     const dataStateObject = useContext(DataContext);
-
+    const errormsg =useContext(ValidationContext);
 
     useEffect(()=>{
        
@@ -21,8 +24,8 @@ const Compose = () => {
                 <div className="input">
                 <input type="text" id='title-input' onChange={inputStateObject.changeInputState} value={inputStateObject.inputState.titleValue}placeholder='Title'/>
                 </div>
-                <div className="errorMsg"></div>
             </div>
+            <div className="errorMsg">{errormsg.errorMsg}</div>
             <div className="input-aligner">
             <div className="label">Description :</div>
                 <div className="input">

@@ -87,3 +87,6 @@
         width: 19.6rem;
     }
 }
+.errorMsg{
+    color: red;
+}
