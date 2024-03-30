@@ -6,22 +6,17 @@ import DataContext from '../Contexts/DataContext'
 const Confessions = () => {
   const dataStateObject = useContext(DataContext);
   const fetchData = async () => {
-    // try{
+    
       const res  = await fetch("https://confessions-11a57-default-rtdb.firebaseio.com/dataContainer.json");
-      
       const data = await res.json();
-   
-      console.log(data.data)
       dataStateObject.setData({data:data.data});
-    // }catch(e){
-      // alert("couldn't fetch data");
-    // }
+  
   }
   useEffect(() => {
     
     fetchData()
-    console.log(dataStateObject.data)
-  }, [dataStateObject.data.data]);
+    // console.log(dataStateObject.data)
+  }, [dataStateObject.data]);
   
   return (
     <section className='confession-section'>
