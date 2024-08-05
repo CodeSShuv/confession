@@ -32,7 +32,7 @@ const App = () => {
               </Routes>
               <footer className='page-bottom'>
                 <p>
-                  The Shuvam Gautam Productions.</p>
+                  </p>
            
               </footer>
             </DataState>
